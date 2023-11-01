@@ -1,0 +1,591 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: #f8f5f5;
+}
+
+p{
+    color: #a1a1a1;
+    margin: 1em 0;
+}
+
+a{
+    text-decoration: none;
+    color: #f8f5f5;
+}
+
+span{
+    color: #ffa800;
+}
+
+header{
+    background-image: url(images/background.png);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    color: #f8f5f5;
+}
+
+nav{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1em 4em;
+    width: 100%;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.logo span{
+    color: #f8f5f5;
+}
+
+.logo:hover i{
+    transform: rotate(35deg);
+    color: #f8f5f5;
+    transition: all 1s;
+}
+
+.logo i{
+    color: #ffa800;
+    font-size: 2.5rem;
+    margin-right: 8px;
+}
+
+nav .hamburger span{
+    display: none;
+    height: 3px;
+    width: 33px;
+    border-radius: 10px;
+    margin: 62000px;
+}
+
+nav ul{
+    background-color: #000;
+}
+nav ul li{
+    display: inline-block;
+    margin: 8px;
+}
+
+nav a{
+    font-size: 1.3rem;
+    color: #f8f5f5;
+}
+
+.nav-link:hover, .active{
+   color: #ffa800;
+   border-bottom: 1px solid #ffa800;
+   padding-bottom: 6px;
+   transition: 0.4s;
+}
+
+nav button{
+    font-size: 1.2rem;
+    padding: 0.5em 0.8em;
+    border: none;
+    border-radius: 8px;
+    background-color: #000;
+    color: #f8f5f5;
+    cursor: pointer;
+}
+
+nav button:hover{
+    background-color: rgb(50, 35, 21);
+}
+
+header .col{
+    height: 80vh;
+}
+
+header img{
+    height: 100%;
+    overflow: hidden;
+}
+
+#about{
+    min-height: 100vh;
+    background-image: url(images/background-1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#about img{
+    width: 90%;
+    height: 100%;
+    max-width: 100%;
+}
+
+#specials{
+    height: auto;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #000;
+}
+
+#specials h2{
+    padding: 3em 0 1em;
+}
+
+#specials .row{
+    height: 70%;
+}
+
+#specials img{
+    width: 100%;
+    height: 50%;
+    border-radius: 50px 0 50px 0;
+}
+
+#specials h4{
+    padding: 1em;
+}
+
+#specials .col-4:hover{
+    background-color: #ffa800;
+    transform: translateY(-20px);
+    text-align: center;
+    transition: 0.5s;
+}
+
+#specials .col-4:hover h4{
+    color: #000;
+    transition: 0.5s;
+}
+
+#specials .col-4:hover p{
+    color: #000;
+    transition: 0.5s;
+}
+
+#facilities{
+    background-color: rgba(20, 20, 20, 1);
+    min-height: 100vh;
+}
+
+#facilities .row{
+    justify-content: space-evenly;
+}
+
+#facilities h2{
+    padding: 3em 0 1em;
+}
+
+#facilities i{
+    color: #ffa800;
+    padding: 0.4em;
+    font-size: 4.5rem;
+}
+
+#facilities h4{
+    text-align: center;
+}
+
+#facilities a{
+    text-align: center;
+}
+
+#facilities .col-3{
+    background-color: #000;
+    border-radius: 0 50px 0 50px;
+}
+
+#facilities .col-3:hover{
+    box-shadow: 2px 2px 10px 2px #ffa800;
+    transform: translateY(-20px);
+    transition: 0.5s;
+}
+
+#testimonial{
+    background-color: #000;
+    min-height: 100vh;
+}
+
+#testimonial .subtitle{
+    padding: 5em 0 0;
+}
+
+#testimonial img{
+    width: 150px;
+    border-radius: 50%;
+}
+
+#testimonial .col-3{
+    border-radius: 50px 0 50px 0;
+}
+
+#testimonial .col-3:hover{
+    box-shadow: 2px 2px 10px 2px #f8f5f5;
+    transition: 0.5s;
+}
+
+#testimonial .col-3:hover img{
+    border-radius: 0;
+    width: 140px;
+    transition: 0.8s;
+}
+
+#services{
+    background-color: #000;
+    min-height: 100vh;
+}
+
+#services .container{
+    padding: 2em 0;
+}
+
+#services .col-4{
+    padding: 1.5em;
+    border-radius: 0 50px 0 0;
+}
+
+#services i{
+    color: #ffa800;
+    padding: 0.5em;
+}
+
+#services .col-4:hover{
+    background-color: #f8f5f5;
+    color: #000;
+    transform: translateY(-20px);
+    transition: 0.5s;
+}
+
+#services .col-4:hover i{
+    color: #000;
+    transition: 0.5s;
+}
+
+#services .col-4:hover p{
+    color: #000;
+    transition: 0.5s;
+}
+
+#services .col-4:hover h4{
+    color: #000;
+    transition: 0.5s;
+}
+
+#menu{
+    background-color: rgba(20, 20, 20, 1);
+}
+
+#menu .container{
+    padding: 2em 0;
+}
+
+#menu ul{
+   text-align: right;
+   padding: 1.2em 0;
+}
+
+#menu ul li{
+    display: inline-block;
+    margin-left: 1em;
+}
+
+#menu li a{
+    padding: 0.4em 1em;
+    border-radius: 8px;
+}
+
+#menu ul li .active-menu, a:hover{
+    background-color: #ffa800;
+    transition: 0.5s;
+}
+
+#menu img{
+    width: 100%;
+    border-radius: inherit;
+}
+
+#menu .col-4{
+    margin: 1em 0;
+    text-align: center;
+}
+
+#menu .col-4 h4{
+    padding-top: 1em;
+}
+
+#menu .col-4 .center p{
+    text-align: center;
+}
+
+#menu .col-4 p{
+    text-align: left;
+    margin: 1em auto;
+    width: 90%;
+}
+
+#menu .col-4:hover{
+    background-color: #ffa800;
+    transform: translateY(-20px);
+    transition: 0.5s;
+}
+
+#menu .col-4:hover h4{
+    color: #000;
+    transition: 0.5s;
+}
+
+#menu .col-4:hover p{
+    color: #000;
+    transition: 0.5s;
+}
+
+#contact{
+    background: #000;
+    min-height: 100vh;
+    padding: 2em 0;
+}
+
+#contact .container{
+    padding: 2em 0 0;
+}
+
+#contact form{
+    width: 100%;
+    background-color: rgba(20, 20, 20, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3em 2em;
+    border-radius: 0 50px 0 0;
+}
+
+#contact form input{
+    width: 80%;
+    height: 4rem;
+    background-color: #000;
+    color: #f8f5f5;
+    border: none;
+    border-radius: 20px;
+    padding: 2em ;
+}
+
+#contact form .text-area{
+    height: 8em;
+}
+
+#contact form button{
+    width: 50%;
+}
+
+#contact img{
+    width: 90%;
+    position: relative;
+}
+
+footer{
+    background-color: rgba(20, 20, 20, 1);
+    padding: 2em;
+}
+
+footer .col-4{
+    align-items: baseline;
+    background: transparent;
+    border-radius: 0;
+    padding: 2em;
+}
+
+footer .fa-instagram, .fa-facebook, .fa-twitter{
+    font-size: 2rem;
+    margin: 0.5em;
+    color: #ffa800;
+}
+
+footer .fa-brands:hover{
+    color: #f8f5f5;
+    transition: 0.5s;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer li{
+    margin-top: 0.5em;
+}
+
+@media screen and(min-width:620px) {
+    h4{
+        font-size: 8rem;
+    }
+}
+
+
+
+@media screen and (max-width:992px){    
+    nav{
+        background-color: #000;
+    }
+
+    nav ul{
+        display: none;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        width: 100%;
+        text-align: left;
+    }
+    
+    .block{
+        display: none;
+    }
+
+    nav ul li{
+        display: block;
+        margin-top: 1em;
+        padding-left: 10%;
+    }
+
+    nav .hamburger span{
+        display: block;
+    }
+    nav button{
+        background-color: #ffa800;
+       }
+
+    #contact form{
+        padding: 2em 0.5em;
+        border-radius: 0 50px 0 0;
+    }
+
+}
+
+
+@media screen and (max-width:770px){
+    nav .logo{
+        font-size: 1.4rem;
+    }
+    nav .logo i{
+        font-size: 1.6rem;
+    }
+    nav .hamburger span{
+        width: 28px;
+    }
+    nav ul li{
+        margin: 1em -1em;
+        width: 100%;
+    }
+    nav ul li a{
+        font-size: 1.2rem;
+    }
+    nav button{
+        font-size: 1.2rem;
+        padding: 0.4em 0.6em;
+    }
+    header .col button{
+        margin: 0.5em 0;
+    }
+
+    header img{
+        width: 130%;
+    }
+
+    #facilities i{
+        padding: 0.4em;
+    }
+    #menu ul{
+        text-align: center;
+    }
+    #menu ul li{
+        margin-left: 0.2em;
+    }
+    #menu ul li a{
+        padding: 0.4em 0.5em;
+    }
+    #contact form input{
+        width: 90%;
+        padding: 1em;
+        height: 3em;
+    }
+    #contact form .text-area{
+        height: 5em;
+    }
+
+    #contact .col{
+        margin-top: 1em;
+    }
+    #contact form button{
+        width: 50%;
+        padding: 0.2em;
+    }
+    footer{
+        padding: 0.5em;
+    }
+
+    footer .col{
+        padding: 1em;
+    }
+    footer .fa-brands{
+        font-size: 1.3em;
+    }
+
+}
+
+@media screen and (max-width:600px){
+    nav {
+        padding: 1em 2em;
+    }
+    nav ul{
+        top: 64px;
+    }
+}
+
+@media screen and (max-width:450px){
+    nav{
+        padding: 1em 0.5em;
+    }
+    nav .logo{
+        font-size: 1.2rem;
+    }
+    nav .logo i{
+        font-size: 1.4rem;
+    }
+    nav .hamburger span{
+        width: 24px;
+    }
+    nav ul li{
+        margin: 1em -1em;
+    }
+    nav ul li a{
+        font-size: 1rem;
+    }
+    nav button{
+        font-size: 1rem;
+        padding: 0.4em;
+    }
+    header{
+        height: auto;
+    }
+    #facilities i{
+        font-size: 3rem
+    }
+    #contact img{
+        width: 100%;
+    }
+    #contact .container{
+        padding: 2em 0;
+    }
+
+}

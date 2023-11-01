@@ -1,0 +1,144 @@
+.container{
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+}
+
+.col{
+    width: 50%;
+}
+
+.col-4{
+    width: 23%;
+    height: 100%;
+    min-width: 23%;
+    border-radius: 50px 0 0 0;
+    background-color: rgba(15, 15, 15, 1);
+}
+
+.col-3{
+    width: 30%;
+    padding: 2em;
+    margin: 2em 0;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.padding{
+    padding: 10% 0;
+}
+
+.btn-primary{
+    font-size: 1.2rem;
+    padding: 0.5em 0.8em;
+    border: none;
+    border-radius: 12px;
+    background-color: #ffa800;
+    color: #f8f5f5;
+    margin: 1px;
+}
+
+.btn-primary:hover{
+    background-color: #e39e12;
+}
+
+.btn-secondary{
+    font-size: 1.2rem;
+    padding: 0.5em 0.8em;
+    border: none;
+    border-radius: 12px;
+    background: transparent;
+    color: #f8f5f5;
+    margin: 1px;
+}
+
+.btn-secondary:hover{
+    border: 1px solid #ffa800;
+    color: #ffa800;
+}
+
+.subtitle{
+    display: flex;
+    align-items: center;
+}
+
+.span-bar{
+    display: block;
+    width: 80px;
+    height: 2px;
+    background-color: #ffa800;
+    margin-left: 20px;
+}
+
+.center{
+    text-align: center;
+}
+
+.price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10% 0;
+    padding: 0 1em;
+}
+
+
+
+@media screen and (max-width:992px){
+    .col-4{
+        width: 45%;
+        margin: 2em 0;
+    }
+    .price{
+        margin: 6% 0;
+    }
+    .col-3{
+        width: 60%;
+        padding: 1.5em;
+    }
+
+    .content{
+        justify-content: space-around;
+    }
+    
+}   
+
+@media screen and (max-width:600px){
+    .col{
+        width: 100%;
+    }
+    .row{
+        flex-direction: column;
+    }
+
+    .block-600{
+        display: none;
+    }
+}
+
+@media screen and (max-width:450px){
+    .col{
+        width: 100%;
+    }
+
+    .col-4{
+        margin: 1em 0;
+    }
+
+    .col-3{
+        width: 100%;
+    }
+}
